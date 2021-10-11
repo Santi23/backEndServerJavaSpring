@@ -42,7 +42,7 @@ public class ClienteREST {
 	@DeleteMapping (value = "delete/{identificacion}")
 	private ResponseEntity<Boolean> borrarCliente (@PathVariable ("identificacion") Long identificacion){
 		clienteServicio.deleteById(identificacion);
-		return ResponseEntity.ok(!(clienteServicio.findById(identificacion)!=null));
+		return ResponseEntity.ok(!(clienteServicio.existsById(identificacion)));
 	}
 	
 }
