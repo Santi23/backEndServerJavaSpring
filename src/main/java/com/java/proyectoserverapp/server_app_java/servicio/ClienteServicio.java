@@ -11,7 +11,7 @@ import com.java.proyectoserverapp.server_app_java.modelo.Cliente;
 import com.java.proyectoserverapp.server_app_java.repositorio.ClienteRepositorio;
 
 @Service
-public class ClienteServicio{
+public class ClienteServicio {
 
 	@Autowired
 	private ClienteRepositorio clienteRepositorio;

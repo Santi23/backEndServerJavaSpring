@@ -23,6 +23,8 @@ public class Cliente implements Serializable {
 	private String correo_electronico;
 	private String telefono;
 	private Date fecha_nacimiento;
+    private Boolean viable;
+
 
 	@ManyToOne
 	@JoinColumn (name = "id_ciudad")
