@@ -20,7 +20,6 @@ public class CiudadServicio {
 	}
 
 	public List<Ciudad> findAll(Sort sort) {
-		// TODO Auto-generated method stub
-		return null;
+		return ciudadRepositorio.findAll(sort);
 	}
 }

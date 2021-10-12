@@ -22,13 +22,15 @@ public class Cliente implements Serializable {
 	private String apellidos;
 	private String correo_electronico;
 	private String telefono;
-	private String ocupacion;
 	private Date fecha_nacimiento;
-	
-	
+
 	@ManyToOne
 	@JoinColumn (name = "id_ciudad")
 	private Ciudad ciudad;
+
+	@ManyToOne
+	@JoinColumn (name = "id_ocupacion")
+	private Ocupacion ocupacion;
 	
 
 }
